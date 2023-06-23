@@ -72,13 +72,16 @@
                   :class="{
                     'vc-calendar-holiday': child.holiday,
                     'vc-calendar-isTerm': child.isTerm,
-                     isGregorianFestival: child.isGregorianFestival
+                    isLunarFestival: child.isAlmanac || child.isLunarFestival,
+                    isGregorianFestival: child.isGregorianFestival
                   }"
                 >
                   {{
                     child.holiday ||
-                       child.gregorianHoliday
-                   }}
+                      child.lunarHoliday ||
+                      child.gregorianHoliday ||
+                      child.lunar
+                  }}
                 </div>
               </div>
             </div>
@@ -105,7 +108,8 @@ import {
   multiOption,
   rangeOption,
   multiRangeOption,
-   isCurrentMonthToday,
+  getLunarInfo,
+  isCurrentMonthToday,
   setTileContent,
   setRemark,
   computedPrevMonth,
@@ -149,6 +153,9 @@ export default {
     },
     day: {
       type: [String, Number]
+    },
+    lunar: {
+      type: Object
     },
     monFirst: {
       type: Boolean,
@@ -345,6 +352,7 @@ export default {
       const options = {
         day: i,
         holiday: holidays?.value?.[`${month}-${i}`],
+        ...getLunarInfo(year, month, i, props.lunar),
         ...setRemarkHandle.getRemark(date),
         ...setTileContentHandle.getTileContent(date),
         ...setDisabledDate({ year, month, i, date }),

@@ -3,6 +3,7 @@ interface TimeTableInterface {
   format?: (year: string | number, month: string | number) => any[];
   weeks: string[];
   tableMode: 'month' | 'week' | 'monthRange';
+  lunar?: any;
   useSwipe: boolean;
   tableIndex?: number;
   timestamp?: number;
@@ -12,11 +13,11 @@ interface TimeTableInterface {
   begin?: string;
   end?: string;
   completion: boolean;
-  holidays?: { [key: string]: string };
-  tileContent: { className?: string, tileContent?: string }[];
-  remarks: { [key: string]: string };
+  holidays?: {[key: string]: string};
+  tileContent: {className?: string, tileContent?: string}[];
+  remarks: {[key: string]: string};
   selectMode: 'select' | 'multi' | 'range' | 'multiRange';
-  selectDate?: string | string[] | { start?: string, end?: string } | { start?: string, end?: string }[]
+  selectDate?: string | string[] | {start?: string, end?: string} | {start?: string, end?: string}[]
   disabled: string[];
 };
 

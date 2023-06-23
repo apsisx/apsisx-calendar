@@ -10,6 +10,27 @@ function date2timeStamp(date: string): number {
   return +new Date(y, m - 1, d);
 }
 
+function getLunarInfo(y: string, m: string, d: string, lunar: any) {
+  const date = `${y}-${m}-${d}`;
+  if (!lunar) {
+    return { date };
+  }
+
+  const lunarInfo = lunar.solar2lunar(y, m, d) as any;
+  const { Term, lMonth, lDay, lYear } = lunarInfo || {};
+  const { lunarHoliday, gregorianHoliday } = lunar || {};
+  const lunarValue = lunarInfo.IDayCn;
+  const yearEve = lMonth === 12 && lDay === lunar.monthDays(lYear, 12) ? '除夕' : undefined;
+
+  const lunarInfoObj = {
+    date,
+    lunar: Term || lunarValue,
+    gregorianHoliday: gregorianHoliday?.[`${m}-${d}`],
+    lunarHoliday: lunarHoliday?.[`${lMonth}-${lDay}`] || yearEve,
+    isTerm: !!yearEve || lunarInfo.isTerm
+  };
+  return lunarInfoObj;
+}
 
 const setRemark = (function () {
   let remarksInfo: any = {};
@@ -68,6 +89,7 @@ type rangeOptionType = {
   date: string;
   isWeekMode: boolean;
   rangeDate: [string, string];
+  getLunarInfo: (year: number, month: number, day: number) => any;
   getEvents: (year: number, month: number, day: number) => any;
 }
 
@@ -76,7 +98,7 @@ function isCurrentMonthToday(date: string) {
   return todayString === date;
 }
 
-function rangeOption({ selectDate, date }: any) {
+function rangeOption({selectDate, date}: any) {
   const { start, end } = selectDate;
   if (start === date) {
     const notCompleteClassName = end ? '' : ' selected-range-not-complete';
@@ -97,7 +119,7 @@ function rangeOption({ selectDate, date }: any) {
   }
 }
 
-function multiRangeOption({ selectDate = [], date }: any) {
+function multiRangeOption({selectDate = [], date}: any) {
   let className;
   selectDate.some((selectItem: any) => {
     const { start, end } = selectItem;
@@ -125,11 +147,11 @@ function multiRangeOption({ selectDate = [], date }: any) {
   return className;
 }
 
-function multiOption({ selectDate, date }: any) {
+function multiOption({selectDate, date}: any) {
   return selectDate.includes(date) ? 'vc-day-selected' : undefined;
 }
 
-function selectOption({ date, selectDate }: any) {
+function selectOption({date, selectDate}: any) {
   return selectDate === date ? 'vc-day-selected' : undefined;
 }
 
@@ -139,6 +161,7 @@ type selectOptionType = {
   isWeekMode: boolean;
   weekSwitch: boolean;
   selectDate: string;
+  getLunarInfo: (year: number, month: number, day: number) => any;
   getEvents: (year: number, month: number, day: number) => any;
 }
 
@@ -187,6 +210,7 @@ export {
   disabledDate,
   setRemark,
   setTileContent,
+  getLunarInfo,
   computedPrevMonth,
   computedNextYear,
   isCurrentMonthToday,

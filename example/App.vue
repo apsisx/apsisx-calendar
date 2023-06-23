@@ -16,7 +16,8 @@
 
 <script>
   import Calendar from '/dist/apsisx-calendar.umd.min.js';
-   import { defineComponent, ref, reactive, onMounted, watchEffect, watch } from 'vue';
+  import lunar from '../src/lunar';
+  import { defineComponent, ref, reactive, onMounted, watchEffect, watch } from 'vue';
 
   export default {
     name: 'app',
@@ -136,7 +137,8 @@
       }
 
       return {
-         holidays,
+        lunar,
+        holidays,
         onSelect,
         monthRange,
         disabled,
