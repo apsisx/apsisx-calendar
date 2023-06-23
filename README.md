@@ -3,10 +3,8 @@
 
 apsisx-calendar only support **vue@3.0+**
 
-Supported node version: >= 10
-
 ```
-npm i apsisx-calendar -S
+Supported node version: >= 10
 ```
 
 ## 🔨 Usage
