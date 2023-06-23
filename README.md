@@ -1,10 +1,8 @@
 
 ## 💻 Install
 
-apsisx-calendar only support **vue@3.0+**
-
 ```
-Supported node version: >= 10
+ node version = 10 >=
 ```
 
 ## 🔨 Usage
@@ -17,7 +15,7 @@ Supported node version: >= 10
 />
 
 import { ref } from 'vue'
-import Calendar from 'apsisx-calendar'
+import Calendar from 'mpvue-calendar'
 
 export default {
   components: {
@@ -56,6 +54,26 @@ export default {
 |  begin  |  String  |    |   Set the available date of the start, and the date before it will be disabled, for example ` '2021-1-5' `  |
 |  end  |  String  |    |  Set the available date of the end, and the date after it will be disabled, for example `'2021-2-5'`  |
 |  disabled  |  String[]  |    |  Disable certain dates , for example `['2021-1-9', '2021-2-5']`  |
+
+#### Chinese lunar
+
+If you need show chinese lunar, you need import lunar module.
+
+```javascript
+<Calendar
+  :lunar="lunar"
+/>
+
+import lunar from 'mpvue-calendar/dist/lunar'
+export default {
+  ...,
+  setup() {
+    return {
+      lunar,
+    }
+  }
+}
+```
 
 ## ⚙️ methods
 

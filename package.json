@@ -7,13 +7,14 @@
     "start": "vue-cli-service serve",
     "build": "npm run build:calendar",
     "build:calendar": "vue-cli-service build --target lib --name apsisx-calendar \"./src/apsisx-calendar.vue\"",
-     "demo": "vue-cli-service build --dest demo './example/main.js'",
+     "remove": "cp ./lib/lunar.umd.min.js ./dist/lunar.js",
+    "demo": "vue-cli-service build --dest demo './example/main.js'",
     "lint": "vue-cli-service lint",
     "publish": "npm publish --registry https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apsisx/apsisx-calendar.git"
+    "url": "git+https://github.com/Hzy0913/apsisx-calendar.git"
   },
   "keywords": [
     "vue",
@@ -25,9 +26,9 @@
   "author": "hzy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/apsisx/apsisx-calendar/issues"
+    "url": "https://github.com/Hzy0913/apsisx-calendar/issues"
   },
-  "homepage": "https://github.com/apsisx/apsisx-calendar#readme",
+  "homepage": "https://github.com/Hzy0913/apsisx-calendar#readme",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"

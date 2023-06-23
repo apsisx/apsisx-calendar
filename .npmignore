@@ -4,7 +4,7 @@ config
 example
 demo
 dist/demo.html
-dist/apsisx-calendar.umd.js
+dist/mpvue-calendar.umd.js
 static
 public
 src
@@ -22,4 +22,4 @@ yarn.lock
 .gitignore
 index.html
 package-lock.json
-apsisx-calendar.common.js
+mpvue-calendar.common.js

@@ -1,11 +1,11 @@
 const path = require("path");
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/apsisx-calendar/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/mpvue-calendar/' : '/',
   configureWebpack: {
     context: path.resolve(__dirname, './'),
     entry: {
-      app: process.env.NODE_ENV === 'production' ? './src/apsisx-calendar.vue' : './example/main.js'
+      app: process.env.NODE_ENV === 'production' ? './src/mpvue-calendar.vue' : './example/main.js'
     },
   },
   css: {

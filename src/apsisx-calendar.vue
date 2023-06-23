@@ -1,7 +1,7 @@
 <template>
   <div
-    class="apsisx-calendar"
-    :class="[`apsisx-calendar-mode-${tableMode}`, className]"
+    class="mpvue-calendar"
+    :class="[`mpvue-calendar-mode-${tableMode}`, className]"
   >
     <Tools
       @onMonthChange="onToolsMonthChange"
@@ -59,7 +59,8 @@
             :begin="begin"
             :end="end"
             :format="format"
-             :backgroundText="backgroundText"
+            :lunar="lunar"
+            :backgroundText="backgroundText"
             @onSelect="onSelect"
             @onMonthChange="monthChange"
           />
@@ -92,6 +93,9 @@
         default() {
           return {};
         }
+      },
+      lunar: {
+        type: Object,
       },
       remarks: {
         type: Object,

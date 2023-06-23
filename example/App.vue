@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="container-select-modes">
+      <Calendar selectMode="multi" class-name="monthRange-mode" mode="monthRange" :monthRange="DateRange"  @onSelect="onSelect"/>
 
       <Calendar
         selectMode="select"
@@ -24,6 +25,11 @@
     components: {
       Calendar
     },
+  computed: {
+    DateRange() {
+        return ["2023-6", "2023-7"]
+      },
+  },
     setup() {
       const currentDate = new Date();
       const currentYear = currentDate.getFullYear();
@@ -184,7 +190,7 @@
       display: flex;
       flex-wrap: wrap;
       .select-mode, .multi-mode, .range-mode, .multiRange-mode{
-        &.apsisx-calendar{
+        &.mpvue-calendar{
           width: 400px;
           margin: 0 auto;
           flex: none;
@@ -196,7 +202,7 @@
       flex-wrap: wrap;
       position: relative;
       .week-mode, .multi-mode, .range-mode, .multiRange-mode, .monthRange-mode{
-        &.apsisx-calendar{
+        &.mpvue-calendar{
           width: 400px;
           margin: 0 auto;
           flex: none;
