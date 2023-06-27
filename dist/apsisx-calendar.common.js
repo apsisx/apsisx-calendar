@@ -6668,34 +6668,34 @@ function slidevue_type_template_id_123b0654_ts_true_render(_ctx, _cache, $props,
 const slide_exports_ = /*#__PURE__*/exportHelper_default()(slidevue_type_script_lang_ts, [['render',slidevue_type_template_id_123b0654_ts_true_render]])
 
 /* harmony default export */ var swipe_slide = (slide_exports_);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/timetable/index.vue?vue&type=template&id=3edb68b2&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/timetable/index.vue?vue&type=template&id=43bcb66e&ts=true
 
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_1 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_1 = {
   class: "vc-calendar-timetable-wrap"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_2 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_2 = {
   key: 0,
   class: "vc-calendar-rang-head"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_3 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_3 = {
   class: "vc-calendar-rang-year-month-box"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_4 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_4 = {
   className: "vc-calendar-rang-head-year"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_5 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_5 = {
   className: "vc-calendar-rang-head-month"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_6 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_6 = {
   class: "vc-calendar-rang-week-box"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_7 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_7 = {
   className: "vc-calendar-content"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_8 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_8 = {
   class: "vc-calendar-day-container"
 };
-var timetablevue_type_template_id_3edb68b2_ts_true_hoisted_9 = {
+var timetablevue_type_template_id_43bcb66e_ts_true_hoisted_9 = {
   class: ['vc-calendar-date']
 };
 var _hoisted_10 = {
@@ -6706,7 +6706,7 @@ var _hoisted_11 = {
   key: 0,
   className: "vc-calendar-month-background-text"
 };
-function timetablevue_type_template_id_3edb68b2_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function timetablevue_type_template_id_43bcb66e_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
     style: {
       "margin": "0 auto"
@@ -6716,13 +6716,13 @@ function timetablevue_type_template_id_3edb68b2_ts_true_render(_ctx, _cache, $pr
       'vc-calendar-timetable-current': $props.tableIndex === 1,
       'vc-calendar-timetable-next': $props.tableIndex === 2
     }]
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
     class: ['vc-calendar-body', "mc-range-mode-".concat($props.tableMode)]
-  }, [$props.tableMode === 'monthRange' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_4, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($setup.formatRangeMonth[0]), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($setup.formatRangeMonth[1]), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_6, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])($props.weeks, function (week, index) {
+  }, [$props.tableMode === 'monthRange' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_4, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($setup.formatRangeMonth[0]), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($setup.formatRangeMonth[1]), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_6, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])($props.weeks, function (week, index) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("span", {
       key: index
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(week), 1);
-  }), 128))])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_7, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])($setup.monthRender.value, function (days, k1) {
+  }), 128))])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_7, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])($setup.monthRender.value, function (days, k1) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
       key: k1,
       class: "vc-calendar-row"
@@ -6745,7 +6745,7 @@ function timetablevue_type_template_id_3edb68b2_ts_true_render(_ctx, _cache, $pr
         onClick: function onClick($event) {
           return $setup.select(k1, k2, child, $event, _ctx.index);
         }
-      }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_3edb68b2_ts_true_hoisted_9, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(child.day), 1), child.tileContent ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
+      }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", timetablevue_type_template_id_43bcb66e_ts_true_hoisted_9, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(child.day), 1), child.tileContent ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
         key: 0,
         class: ['vc-calendar-slot-element', child.tileContent.className]
       }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(child.tileContent.content), 3)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), child.remark ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_10, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(child.remark), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
@@ -6759,7 +6759,7 @@ function timetablevue_type_template_id_3edb68b2_ts_true_render(_ctx, _cache, $pr
     }), 128))]);
   }), 128)), $props.backgroundText ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_11, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.month), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)])], 2)])], 2);
 }
-// CONCATENATED MODULE: ./src/components/timetable/index.vue?vue&type=template&id=3edb68b2&ts=true
+// CONCATENATED MODULE: ./src/components/timetable/index.vue?vue&type=template&id=43bcb66e&ts=true
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.fill.js
 var es_array_fill = __webpack_require__("cb29");
@@ -7512,7 +7512,7 @@ var setTileContentHandle = setTileContent();
       if (monFirst !== null && monFirst !== void 0 && monFirst.value) {
         firstWeekDayCompletionCount = (firstDayOfMonth === 1 ? 7 : firstDayOfMonth) - 1;
       } else {
-        firstWeekDayCompletionCount = firstDayOfMonth === 0 ? 0 : firstDayOfMonth;
+        firstWeekDayCompletionCount = firstDayOfMonth === 0 ? 7 : firstDayOfMonth;
       }
 
       firstWeekDayCompletionCount = firstWeekDayCompletionCount ? firstWeekDayCompletionCount - 1 : firstWeekDayCompletionCount;
@@ -7706,7 +7706,7 @@ var setTileContentHandle = setTileContent();
 
 
 
-const timetable_exports_ = /*#__PURE__*/exportHelper_default()(timetablevue_type_script_lang_ts, [['render',timetablevue_type_template_id_3edb68b2_ts_true_render]])
+const timetable_exports_ = /*#__PURE__*/exportHelper_default()(timetablevue_type_script_lang_ts, [['render',timetablevue_type_template_id_43bcb66e_ts_true_render]])
 
 /* harmony default export */ var timetable = (timetable_exports_);
 // EXTERNAL MODULE: ./src/style.less

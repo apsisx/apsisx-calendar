@@ -377,7 +377,7 @@ export default {
       if (monFirst?.value) {
          firstWeekDayCompletionCount = (firstDayOfMonth === 1 ? 7 : firstDayOfMonth) - 1;
       } else {
-        firstWeekDayCompletionCount = firstDayOfMonth === 0 ? 0 : firstDayOfMonth;
+        firstWeekDayCompletionCount = firstDayOfMonth === 0 ? 7 : firstDayOfMonth;
       }
 
       firstWeekDayCompletionCount = firstWeekDayCompletionCount ? firstWeekDayCompletionCount -1 : firstWeekDayCompletionCount;
